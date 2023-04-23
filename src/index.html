@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500;600;700&family=Montserrat:wght@500;700&family=Nunito+Sans&family=Roboto:ital,wght@0,300;1,300&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Bookshop</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <a href="#" class="nav-logo">Bookshop</a>
+          <ul class="menu">
+            <li class="menu-item">
+              <a class="menu-link menu-link-active" href="#">books</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#">audiobooks</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#">Stationery & gifts</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#">blog</a>
+            </li>
+          </ul>
+          <img
+            src="images/burger-menu.svg"
+            class="nav__burger"
+            alt="burger menu"
+          />
+          <div class="nav-controls">
+            <a href="#"> <img src="images/user.svg" alt="user login" /></a>
+            <a href="#"> <img src="images/search.svg" alt="search img" /></a>
+            <a href="#" class="cart"
+              ><img src="images/cart.svg" alt="cart img" />
+              <span class="cart__counter" id="cart-counter"></span
+            ></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="slider-container">
+        <div class="slider-item" id="slider-item"></div>
+        <div class="slider-nav">
+          <span class="slider-nav__item slider-nav__item-active"></span
+          ><span class="slider-nav__item"></span
+          ><span class="slider-nav__item"></span>
+        </div>
+      </section>
+      <section class="books container">
+        <div class="books-nav" id="books-nav"></div>
+        <div class="books-block" id="books-block"></div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

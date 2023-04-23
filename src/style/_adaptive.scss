@@ -1,0 +1,87 @@
+/* xl-размер (>=1200px) */
+/* CSS для >=1200px */
+
+/* lg-размер (<=1199px) */
+@media (max-width: 1199px) {
+  .container {
+    max-width: 100%;
+    padding: 0 5px;
+  }
+  .slider {
+    &-start {
+      height: 100%;
+      padding-bottom: 78px;
+      &__img,
+      &-change,
+      &-top {
+        display: none;
+      }
+    }
+  }
+
+  /* CSS для ширины от 992px до 1199px */
+  .slider-container {
+    max-width: 100%;
+  }
+  .more-books {
+  }
+  .books {
+    flex-direction: column;
+    &-nav {
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+      &__item {
+        width: auto;
+        margin: 2% 5%;
+      }
+    }
+    &-desc {
+      width: 65%;
+      align-items: center;
+      text-align: center;
+    }
+    &-block {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      //   img {
+      //     max-width: 35%;
+      //   }
+      &-item {
+        width: 50%;
+        justify-content: space-between;
+        border: 1.5px solid #4e4d4d63;
+        border-radius: 15px;
+        padding: 10px 20px;
+        left: 0;
+      }
+    }
+  }
+}
+
+/* md-размер (<=991px) */
+@media (max-width: 991px) {
+  .menu {
+    display: none;
+  }
+  .nav__burger {
+    display: inline-block;
+  }
+  .nav-logo {
+  } /* CSS для ширины от 768px до 991px */
+}
+
+/* sm-размер (<=768px) */
+@media (max-width: 767px) {
+  /* CSS для ширины от 576px до 767px */
+}
+
+/* xs-размер (<=575px) */
+@media (max-width: 575px) {
+  .slider-container {
+    display: none;
+  }
+  /* CSS для ширины до 575px (включительно) */
+}
